@@ -238,7 +238,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     gap: 8rem;
     background-color: var(--bgColor);
-    padding: 8rem 9% 5rem;
+    padding: 6rem 9% 0;
     user-select: none;
 }
 
@@ -522,7 +522,7 @@ span {
 
 /* Experience Section */
 .experience {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;

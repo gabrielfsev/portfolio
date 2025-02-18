@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Portfolio // Gabrielsevf</title>
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="portfólio, desenvolvedor web, projetos, HTML, CSS, JavaScript, desenvolvimento, frontend">
+
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/" class="logo">Gabrielsev</a>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <button onclick="menu()" id="btn-menu" class="btn-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main id="home" class="home">
+        <div class="home-img">
+            <img src="./src/img/perfil.jpeg" alt="Foto de Perfil">
+        </div>
+
+        <div class="home-content">
+            <h1>Oi, meu nome é <span>Gabriel</span></h1>
+
+            <h3 class="typing-text"><span></span></h3>
+
+            <p>
+                Eu me chamo Gabriel, sou desenvolvedor frontend web, trabalho com HTML, CSS e JavaScript.
+            </p>
+
+            <div class="social-icon">
+                <!-- Linkedin -->
+                <a data-social="Linkedin" href="https://www.linkedin.com/in/gabriel-ferreira-severino-a7a70b317"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a data-social="Github" href="https://github.com/gabrielfsev" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- CV -->
+                <a data-social="CV"
+                    href="https://drive.google.com/file/d/1TBQENwIxjbGijQ_Rq7eprkRATNXc2E0u/view?usp=sharing"
+                    target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5514988381159&text=Quero+saber+mais+sobre+seus+servi%C3%A7os.&type=phone_number&app_absent=0"
+                target="_blank" class="btn">
+                Fale Comigo!
+            </a>
+        </div>
+    </main>
+
+    <section id="experience" class="experience">
+        <h2 class="experienceTitle">Experiência</h2>
+
+        <div class="experienceContainer">
+            <div class="experienceBox">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="titleBox">Suporte Técnico - Solutudo Brasil</h3>
+                <h4 class="durationBox">3 Meses</h4>
+                <p class="descriptionBox">Prestação de suporte dedicado para todos os websites das unidades da empresa,
+                    abrangendo questões
+                    relacionadas à hospedagem, gestão de e-mails, e alterações avançadas em HTML, CSS e JavaScript. O
+                    atendimento é prestado tanto aos clientes quanto aos franqueados, assegurando um suporte completo e
+                    eficiente.</p>
+            </div>
+
+            <div class="experienceBox">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="titleBox">Freelancer</h3>
+                <h4 class="durationBox">8 Meses</h4>
+                <p class="descriptionBox">Criação de sites responsivos utilizando HTML, CSS e JavaScript. Isso pode
+                    incluir
+                    landing
+                    pages, blogs, portfólios, sites corporativos e E-commerce.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="skillsTitle">Skills</h2>
+
+        <div class="skillsContainer">
+            <div class="skillsBox">
+                <img src="./src/img/tech/html.svg" width="60" height="60">
+                <p>HTML</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/css.svg" width="60" height="60">
+                <p>CSS</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/js.svg" width="60" height="60">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/php.svg" width="60" height="60">
+                <p>PHP</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/mysql.svg" width="60" height="60" class="sql">
+                <p>MySql</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/bootstrap.svg" width="60" height="60">
+                <p>Bootstrap</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/react-native.svg" width="60" height="60">
+                <p>React Native</p>
+            </div>
+
+            <div class="skillsBox">
+                <img src="./src/img/tech/csharp.svg" width="60" height="60">
+                <p>C#</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies -->
+    <div class="cookies-msg" id="cookies-msg">
+        <div class="cookies-txt">
+            <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um
+                aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo
+                com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+            <div class="cookies-btn">
+                <button onclick="accept()">Aceito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/cookies.js"></script>
+    <script src="src/js/icon.js"></script>
+</body>
+
+</html>

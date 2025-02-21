@@ -1,0 +1,143 @@
+:root {
+    --mainColor: #513dff;
+    --bgColor: #141414;
+    --secondBgColor: #000000;
+    --transparentBgColor: #00000091;
+    --textColor: #ffffff;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7rem;
+    padding: 2rem 0% 5rem;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.projectsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projectsBox {
+    width: 400px;
+    height: 500px;
+    border: 2px solid var(--textColor);
+    background-color: var(--secondBgColor);
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 30px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.projectsBox img {
+    min-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.projectsBox .titleProject {
+    color: var(--textColor);
+    font-size: 26px;
+    font-weight: 400;
+    transition: .3s ease;
+}
+
+.projectsBox .descriptionProject {
+    font-size: 18px;
+    color: var(--textColor);
+    font-weight: 400;
+    transition: .3s ease;
+}
+
+.projectsBox .buttonsProject {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsProject .btnProject {
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--textColor);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.projectsBox:hover {
+    background-color: var(--textColor);
+    color: var(--secondBgColor);
+    border-color: var(--secondBgColor);
+    transform: translateY(-10px);
+}
+
+.projectsBox:hover img {
+    border: 2px solid var(--secondBgColor);
+}
+
+.projectsBox:hover .buttonsProject .btnProject {
+    border-color: var(--secondBgColor);
+    color: var(--secondBgColor);
+    background-color: var(--textColor);
+}
+
+.projectsBox:hover .buttonsProject .btnProject:hover {
+    border-color: var(--secondBgColor);
+    color: var(--textColor);
+    background-color: var(--mainColor);
+}
+
+.projectsBox:hover .titleProject,
+.projectsBox:hover .descriptionProject {
+    color: var(--secondBgColor);
+}
+
+@media screen and (max-width: 450px) {
+    .project {
+        padding: 1rem;
+    }
+
+    .projectsBox {
+        width: 350px;
+        height: 450px;
+    }
+
+    .projectsBox img {
+        height: 175px;
+    }
+
+    .projectsBox .descriptionProject {
+        font-size: 16px;
+    }
+
+    .buttonsProject .btnProject {
+        width: 125px;
+        height: 40px;
+        font-size: 14px;
+    }
+}

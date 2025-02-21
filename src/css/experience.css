@@ -1,0 +1,70 @@
+:root {
+    --mainColor: #513dff;
+    --bgColor: #141414;
+    --secondBgColor: #000000;
+    --transparentBgColor: #00000091;
+    --textColor: #ffffff;
+}
+
+/* Experience Section */
+.experience {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem 9% 5rem;
+    user-select: none;
+}
+
+.experienceContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.experienceBox {
+    width: 400px;
+    padding: 2rem;
+    border: solid 2px var(--mainColor);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.experienceBox i {
+    color: var(--textColor);
+    font-size: 20px;
+}
+
+.experience .titleBox {
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+.experience .durationBox {
+    color: var(--textColor);
+    font-size: 16px;
+}
+
+.experience .descriptionBox {
+    color: var(--textColor);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 965px) {
+    .experienceContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experienceBox {
+        width: 300px;
+    }
+
+    .experience .descriptionBox {
+        font-size: 12px;
+    }
+}

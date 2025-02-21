@@ -1,0 +1,84 @@
+:root {
+    --mainColor: #513dff;
+    --bgColor: #141414;
+    --secondBgColor: #000000;
+    --transparentBgColor: #00000091;
+    --textColor: #ffffff;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--mainColor);
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--secondBgColor);
+}
+
+.footer .social a {
+    font-size: 25px;
+    color: var(--secondBgColor);
+    border: 2px solid var(--secondBgColor);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-5px);
+    background-color: var(--secondBgColor);
+    color: var(--mainColor);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: var(--secondBgColor);
+    border-bottom: 3px solid transparent;
+    transition: .3s ease;
+}
+
+.footer ul li a:hover {
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li:hover {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--secondBgColor);
+}
+
+@media screen and (max-width: 991px) {
+    .footer {
+        padding: 2rem 3%;
+    }
+}

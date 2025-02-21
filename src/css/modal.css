@@ -1,0 +1,73 @@
+:root {
+    --mainColor: #513dff;
+    --bgColor: #141414;
+    --secondBgColor: #000000;
+    --transparentBgColor: #00000091;
+    --textColor: #ffffff;
+}
+
+.modal {
+    z-index: 1001;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007a;
+}
+
+.modal .modalContent {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border: 2px solid var(--mainColor);
+    border-radius: 15px;
+    background-color: var(--secondBgColor);
+}
+
+.modalContent .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+}
+
+.closeBtn i {
+    color: var(--textColor);
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.closeBtn i:hover {
+    color: var(--mainColor);
+}
+
+.modalContent h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.modalContent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--textColor);
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .modal {
+        top: 0;
+    }
+
+    .modalContent {
+        width: 325px !important;
+    }
+}

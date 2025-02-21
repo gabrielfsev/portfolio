@@ -8,6 +8,7 @@
 
 /* Cookies Section */
 .cookies-msg {
+    z-index: 100;
     width: 30%;
     font-size: 12px;
     background-color: var(--textColor);

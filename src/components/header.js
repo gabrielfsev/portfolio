@@ -12,7 +12,6 @@ header.innerHTML = `
                     <li><a href="#experience">Experiência</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
 
@@ -29,7 +28,6 @@ header.innerHTML = `
                 <li><a href="#experience">Experiência</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
 `;

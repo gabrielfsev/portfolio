@@ -13,7 +13,7 @@ home.innerHTML = `
             <h3 class="typing-text"><span></span></h3>
 
             <p>
-                Eu me chamo Gabriel, sou desenvolvedor full-stack web, trabalho com HTML, CSS, Bootstrap, JavaScript,
+                Eu me chamo Gabriel, sou desenvolvedor full-stack web, trabalho com HTML, CSS, JavaScript,
                 PHP e MySql.
             </p>
 

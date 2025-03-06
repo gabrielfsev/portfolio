@@ -1,3 +1,6 @@
+// Capturar ID do HTML
+let msgCookies = document.getElementById('cookies-msg');
+
 // Função para armazenar no localStorage
 function accept() {
     localStorage.lgpdCookies = "display";

@@ -49,52 +49,239 @@
 
     <!-- Header -->
     <header class="header" id="header">
-        <!-- Conteúdo inserido por JavaScript -->
+        <nav class="nav">
+            <a href="/" class="logo">Gabrielsev</a>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                </ul>
+            </div>
+
+            <button onclick="menu()" id="btn-menu" class="btn-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+        <div class="menu-items" id="menu-items">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projetos</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- Main -->
     <main id="home" class="home">
-        <!-- Conteúdo inserido por JavaScript -->
+        <div class="home-img">
+            <img src="./src/img/perfil.jpeg" alt="Foto de Perfil">
+        </div>
+
+        <div class="home-content">
+            <h1>Oi, meu nome é <span>Gabriel</span></h1>
+
+            <h3 class="typing-text"><span></span></h3>
+
+            <p>
+                Eu me chamo Gabriel, sou desenvolvedor full-stack web, trabalho com HTML, CSS, Bootstrap, JavaScript,
+                PHP e MySql.
+            </p>
+
+            <div class="social-icon">
+                <!-- Linkedin -->
+                <a data-social="Linkedin" href="https://www.linkedin.com/in/gabriel-ferreira-severino-a7a70b317"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a data-social="Github" href="https://github.com/gabrielfsev" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- CV -->
+                <a data-social="CV"
+                    href="https://drive.google.com/file/d/1KL8N4kFTFH3A15zpNXJ-vsbmDI3XoDhW/view?usp=sharing"
+                    target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5514988381159&text=Quero+saber+mais+sobre+seus+servi%C3%A7os.&type=phone_number&app_absent=0"
+                target="_blank" class="btn">
+                Fale Comigo!
+            </a>
+        </div>
     </main>
 
     <!-- Experience -->
     <section id="experience" class="experience">
-        <!-- Conteúdo inserido por JavaScript -->
+        <h2 class="sectionTitle">Experiência</h2>
+
+        <div class="experienceContainer">
+            <div class="experienceBox">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="titleBox">Suporte Técnico - Solutudo Brasil</h3>
+                <h4 class="durationBox">3 Meses</h4>
+                <p class="descriptionBox">Prestação de suporte dedicado para todos os websites das unidades da empresa,
+                    abrangendo questões
+                    relacionadas à hospedagem, gestão de e-mails, e alterações avançadas em HTML, CSS e JavaScript. O
+                    atendimento é prestado tanto aos clientes quanto aos franqueados, assegurando um suporte completo e
+                    eficiente.</p>
+            </div>
+
+            <div class="experienceBox">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="titleBox">Freelancer</h3>
+                <h4 class="durationBox">8 Meses</h4>
+                <p class="descriptionBox">Criação de sites responsivos utilizando HTML, CSS e JavaScript. Isso pode
+                    incluir
+                    landing
+                    pages, blogs, portfólios, sites corporativos e E-commerce.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="skills">
-        <!-- Conteúdo inserido por JavaScript -->
+        <h2 class="sectionTitle">Skills</h2>
+
+        <div class="skillsContainer">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/html.svg" class="skillsImg">
+                <p>HTML</p>
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/css.svg" class="skillsImg">
+                <p>CSS</p>
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/js.svg" class="skillsImg">
+                <p>JavaScript</p>
+            </a>
+
+            <a href="https://www.php.net/" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/php.svg" class="skillsImg">
+                <p>PHP</p>
+            </a>
+
+            <a href="https://www.mysql.com/" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/mysql.svg" class="skillsImg sql">
+                <p>MySql</p>
+            </a>
+
+            <a href="https://getbootstrap.com/" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/bootstrap.svg" class="skillsImg">
+                <p>Bootstrap</p>
+            </a>
+
+            <a href="https://reactnative.dev/" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/react-native.svg" class="skillsImg">
+                <p>React Native</p>
+            </a>
+
+            <a href="https://dotnet.microsoft.com/pt-br/languages/csharp" target="_blank" class="skillsBox">
+                <img src="./src/img/tech/csharp.svg" class="skillsImg">
+                <p>C# (estudando)</p>
+            </a>
+        </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects">
-        <!-- Conteúdo inserido por JavaScript -->
+        <h2 class="sectionTitle">Projetos</h2>
+
+        <div class="projectsContainer">
+            <div class="projectsBox">
+                <img src="./src/img/projects/garagem_calcados.png">
+                <h2 class="titleProject">Garagem Calçados</h2>
+                <p class="descriptionProject">E-commerce desenvolvido para um empresa fornecer vendas online.</p>
+                <div class="buttonsProject">
+                    <a href="https://garagemcalcados.com.br/" target="_blank" class="btnProject">Website</a>
+                    <a onclick="modalActive(1)" class="btnProject">Repositório</a>
+                </div>
+            </div>
+
+            <div class="projectsBox">
+                <img src="./src/img/projects/crud.png">
+                <h2 class="titleProject">CRUD</h2>
+                <p class="descriptionProject">Create Read Update e Delete, feito com PHP, MySql e Bootstrap</p>
+                <div class="buttonsProject">
+                    <a onclick="modalActive(2)" class="btnProject">Website</a>
+                    <a href="https://github.com/gabrielfsev/crud" target="_blank" class="btnProject">Repositório</a>
+                </div>
+            </div>
+
+            <div class="projectsBox">
+                <img src="./src/img/projects/dsupplier.png" alt="">
+                <h2 class="titleProject">Dsupplier</h2>
+                <p class="descriptionProject">E-Commerce com foco em informar receitas e vendas online.</p>
+                <div class="buttonsProject">
+                    <a href="https://dsupplier.vercel.app/" target="_blank" class="btnProject">Website</a>
+                    <a href="https://github.com/gabrielfsev/dsupplier" target="_blank"
+                        class="btnProject">Repositório</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Cookies -->
     <div class="cookies-msg" id="cookies-msg">
-        <!-- Conteúdo inserido por JavaScript -->
+        <div class="cookies-txt">
+            <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um
+                aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo
+                com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+            <div class="cookies-btn">
+                <button onclick="accept()">Aceito</button>
+            </div>
+        </div>
     </div>
 
     <footer id="footer" class="footer">
-        <!-- Conteúdo inserido por JavaScript -->
+        <div class="social">
+            <!-- Linkedin -->
+            <a data-social="Linkedin" href="https://www.linkedin.com/in/gabriel-ferreira-severino-a7a70b317"
+                target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- Github -->
+            <a data-social="Github" href="https://github.com/gabrielfsev" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- CV -->
+            <a data-social="CV"
+                href="https://drive.google.com/file/d/1KL8N4kFTFH3A15zpNXJ-vsbmDI3XoDhW/view?usp=sharing"
+                target="_blank">
+                <i class="fa-solid fa-file-pdf"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+        </ul>
+        <p class="copyright">
+            &copy; Gabrielsev | Todos os Direitos Reservados
+        </p>
     </footer>
 
     <!-- Functions -->
     <script src="./src/js/menu.js"></script>
     <script src="src/js/icon.js"></script>
     <script src="src/js/modal.js"></script>
-
-    <!-- Components -->
-    <script src="./src/components/header.js"></script>
-    <script src="./src/components/main.js"></script>
-    <script src="./src/components/experience.js"></script>
-    <script src="./src/components/skills.js"></script>
-    <script src="./src/components/projects.js"></script>
-    <script src="./src/components/cookies.js"></script>
-    <script src="./src/js/modal.js"></script>
-    <script src="./src/components/footer.js"></script>
+    <script src="./src/js/cookies.js"></script>
 </body>
 
 </html>

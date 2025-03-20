@@ -14,27 +14,3 @@ function modalActive(num) {
         modalWebsite.style.display = "none";
     }
 }
-
-modalRepository.innerHTML = `
-        <div id="modalContent" class="modalContent">
-            <div class="closeBtn">
-                <i onclick="modalActive(0)" class="fa-solid fa-xmark"></i>
-            </div>
-
-            <h1>Aviso!</h1>
-
-            <p>A empresa do projeto não disponibiliza a visibilidade do código.</p>
-        </div>
-`
-
-modalWebsite.innerHTML = `
-        <div id="modalContent" class="modalContent">
-            <div class="closeBtn">
-                <i onclick="modalActive(0)" class="fa-solid fa-xmark"></i>
-            </div>
-
-            <h1>Aviso!</h1>
-
-            <p>Não é possivel acessar o website.</p>
-        </div>
-`
